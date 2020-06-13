@@ -10,7 +10,7 @@ FONCTIONNALITES
 - Le bouton Toast fait apparaitre un toast message (qu'on peut modifier dans l'inspector)
 - Le bouton Vibrate fait vibrer le portable
 - Un bouton pour quitter
-- Le build 
+- L'application doit être testé avec un portable android
 
 PROCEDURE
 
