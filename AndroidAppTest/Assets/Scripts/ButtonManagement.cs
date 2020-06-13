@@ -8,7 +8,6 @@ public class ButtonManagement : MonoBehaviour
 
     void Start() {
         ajc = new AndroidJavaClass("com.example.myplugin.ButtonHandler");
-        SendToAndroid("Hello World");
     }
 
     public void VibratePhone() {
@@ -19,11 +18,7 @@ public class ButtonManagement : MonoBehaviour
         ajc.CallStatic("ShowToast", message);
     }
 
-    private void SendToAndroid(string message) {
-        ajc.CallStatic("ShowToast", message);
-    }
-
-    private void ReceiveFromAndroid(string message) {
-        Debug.Log("Received message from toast plugin: " + message);
+    public void QuitApp() {
+        Application.Quit();
     }
 }
